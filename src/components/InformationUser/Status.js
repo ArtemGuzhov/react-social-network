@@ -10,7 +10,7 @@ export const Status = ({ props }) => {
 
   return (
     <>
-      <span>{props.status}</span>
+      <span>{props}</span>
       <div className="Line" style={style}></div>
     </>
   )

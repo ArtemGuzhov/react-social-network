@@ -1,0 +1,13 @@
+.dialogs a {
+  color: blue;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dialogs a:hover,
+.dialogs a:active,
+.dialogs a.active {
+  color: purple;
+}

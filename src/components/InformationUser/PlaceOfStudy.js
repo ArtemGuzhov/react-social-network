@@ -10,7 +10,7 @@ export const PlaceOfStudy = ({ props }) => {
     <>
       <div className="row" style={style}>
         <strong className="col-4">Место учебы:</strong>
-        <span className="col-8">{props.place_study}</span>
+        <span className="col-8">{props}</span>
       </div>
     </>
   )

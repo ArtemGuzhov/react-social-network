@@ -1,7 +1,17 @@
 import React from 'react'
 import { Button, Form, FormControl, InputGroup } from 'react-bootstrap'
 
-export const SumbitPost = () => {
+export const SumbitPost = (props) => {
+  const addPost = () => {
+    debugger
+    props.addPost(props.props)
+    props.changeNewPostText('')
+  }
+
+  const changeNewPostText = (e) => {
+    props.changeNewPostText(e.target.value)
+  }
+
   return (
     <>
       <Form>
@@ -23,10 +33,12 @@ export const SumbitPost = () => {
           <FormControl
             id="inlineFormInputGroup"
             placeholder="Что у вас нового?"
+            onChange={changeNewPostText}
+            value={props.props}
           />
           <InputGroup.Prepend>
             <InputGroup.Text>
-              <a onClick={() => console.log(1)}>
+              <a href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -44,7 +56,7 @@ export const SumbitPost = () => {
         <div className="container">
           <div className="row">
             <div className="col-8"></div>
-            <Button className="col-4">
+            <Button className="col-4" onClick={addPost}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

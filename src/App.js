@@ -4,26 +4,27 @@ import { BrowserRouter } from 'react-router-dom'
 import { Header } from './components/Header/Header'
 import { NavBar } from './components/NavBar/NavBar'
 import { useRoutes } from './routes'
+import { Container, Row, Col } from 'react-bootstrap'
 
-function App() {
-  const routes = useRoutes()
+function App(props) {
+  const routes = useRoutes(props)
 
   return (
     <>
       <BrowserRouter>
-        <div className="container">
-          <div className="row">
-            <div className="col">
+        <Container>
+          <Row>
+            <Col>
               <Header />
-            </div>
-          </div>
-          <div className="row">
-            <div className="left-column col-2">
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={2}>
               <NavBar />
-            </div>
-            <div className="right-column col-10">{routes}</div>
-          </div>
-        </div>
+            </Col>
+            <Col xs={10}>{routes}</Col>
+          </Row>
+        </Container>
       </BrowserRouter>
     </>
   )

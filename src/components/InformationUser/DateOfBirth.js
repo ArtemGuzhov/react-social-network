@@ -10,7 +10,7 @@ export const DateOfBirth = ({ props }) => {
     <>
       <div className="row" style={style}>
         <strong className="col-4">День рождения:</strong>
-        <span className="col-8">{props.dabi}</span>
+        <span className="col-8">{props}</span>
       </div>
     </>
   )

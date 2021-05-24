@@ -5,7 +5,6 @@ import { AboutMe } from './AboutMe'
 import { GroupUser } from './GroupUser'
 
 export const MoreInfo = ({ props }) => {
-  console.log(props)
   const [open, setOpen] = useState()
 
   const line = {

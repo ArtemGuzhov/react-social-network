@@ -1,0 +1,10 @@
+.left_navlinks a {
+  color: blue;
+  text-decoration: none;
+}
+
+.left_navlinks a:hover,
+.left_navlinks a:active,
+.left_navlinks a.active {
+  color: black;
+}

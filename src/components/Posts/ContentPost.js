@@ -1,6 +1,5 @@
 import React from 'react'
-import { Card, Col, Row, Button } from 'react-bootstrap'
-import photo from '../../images/avatar.JPG'
+import { Card, Col, Row } from 'react-bootstrap'
 
 export const ContentPost = ({ props }) => {
   return (
